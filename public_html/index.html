@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="semantic-ui/semantic.min.css">
+</head>
+<body>
+    <div id="app">
+        <div class="ui container" style="margin-top: 15px;">
+            <labor-hours
+                v-for="config in configs"
+                v-bind:title="config.title"
+                v-bind:rate="config.rate"
+            ></labor-hours>
+        </div>
+    </div>
+    <script src="js/lib/jquery-3.3.1.min.js"></script>
+    <script src="semantic-ui/semantic.min.js"></script>
+    <script src="js/lib/lodash.min.js"></script>
+    <script src="js/lib/vue.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
